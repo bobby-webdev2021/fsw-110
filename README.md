@@ -1,3 +1,2 @@
 # fsw-110
-fsw 110 class
-pnp intro to dom
+fsw 110 weekly folders
