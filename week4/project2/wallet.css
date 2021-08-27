@@ -1,0 +1,68 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize:regular);
+
+body{
+    background-color: rgb(7, 7, 48);
+    width: auto;
+    color: white;
+}
+#logo{
+    float: left;
+    margin: 20px;
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a 
+{
+   text-decoration: overline;
+    color: white;
+    padding: 6px 20px;
+    font-weight: 700;
+    font-family: Electrolize;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+header{
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.umskrOEe4MtYadufDmUTwwHaEK&pid=Api&P=0&w=359&h=203);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+#title{
+    text-align: center;
+}
+#wallet{
+    text-align: center;
+}
+footer{
+    text-align: center;
+}
+button{
+    margin-left: 5px;
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.umskrOEe4MtYadufDmUTwwHaEK&pid=Api&P=0&w=359&h=203);
+    border-radius: 25px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+p{text-align: center;
+}
+h3{
+    text-align: center;
+    text-decoration: underline;
+}
+b{
+    text-decoration: underline;
+}
+
+

@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Electrolize:regular);
+
+body{
+    background-color: rgb(7, 7, 48);
+    width: auto;
+}
+#logo{
+    float: left;
+    margin: 20px;
+}
+ul{
+    float: right;
+    list-style: none;
+    margin-top: 20px;
+}
+ul li {
+    display: inline-block;
+}
+ul li a 
+{
+   text-decoration: overline;
+    color: white;
+    padding: 6px 20px;
+    font-weight: 700;
+    font-family: Electrolize;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+.title{
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+    font-family: Electrolize;
+    width: 100%;
+}
+#table{
+    color: white;
+    font-family: Electrolize;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-bottom: 14px;
+    
+}
+th, tr, td{
+    text-decoration: underline;
+}
+th{
+    position: relative;
+    left: 100px;
+}
+footer{
+    text-align: center;
+    color: white;
+    position: relative;
+    top: 120px;
+}
+#top5{
+    
+    
+    
+    color: white;
+    margin-left:15px;
+    position:relative;
+    border: 2px solid;
+    width: 95%;
+    padding: 10px;
+    margin-top: 20px;
+    float: left;
+
+    
+    
+    font-family: Electrolize;
+}
+li{
+    padding-bottom: 5px;
+}
+#content{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main" 
+    "aside"
+    "footer footer";
+}
+header{
+    background-image: url(https://tse1.mm.bing.net/th?id=OIP.umskrOEe4MtYadufDmUTwwHaEK&pid=Api&P=0&w=359&h=203);
+    background-repeat: no-repeat;
+  background-size: 100% 100%;
+  
+  
+  
+}
+#ticker{
+    margin-right:  30px;
+    width: auto;
+    
+}
+#info{
+    margin-right: 20px;
+}
+
+
+
