@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <form name="form" action= "index.html">
+            <label for="firstName">First Name</label>
+            <input class="userInfo" placeholder="First Name" type="text" id="name">
+            <label for="lastName">Last Name</label>
+            <input class="userInfo" placeholder="Last Name" type="text" id="last">
+            <label for="age">Age</label>
+            <input class="userInfo" placeholder="Age" type="number" id="age">
+            <label> Have you created a wallet before?</label>
+            <input class='userInfo' type="radio" id="radbut" name="radbut">
+            <label for="radbut">Yes</label>
+            <input class='userInfo' type="radio" id="radbut" name="radbut">
+            <label for="radbut">No</label><br>
+            <label for="selector">How likley are you to refer CryptoHub to a friend?</label>
+            <input class="userInfo" type="checkbox" id="selector" name="selector">
+            <button onclick="myFunction()">Submit</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
