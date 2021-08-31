@@ -1,4 +1,29 @@
-div{
-    border: 2px solid black;
-    width: 15%;
+body{
+   background-color: rgb(4, 4, 49);
 }
+
+form{
+   display: flex;
+   flex-direction: column;
+   max-width: 170px;
+   
+}
+div{
+   display: flex;
+   justify-content: center;
+   width: 190px;
+   border: 2px solid black;
+   margin: auto;
+   margin-top: 20px;
+   
+   background-color: rgb(178, 178, 228);
+   
+}
+
+input, label, button{
+   margin-bottom: 10px;
+}
+button, #marg{
+   margin-top: 10px;
+}
+

@@ -17,12 +17,26 @@
             <label for="age">Age</label>
             <input class="userInfo" placeholder="Age" type="number" id="age">
             <label> Have you created a wallet before?</label>
-            <input class='userInfo' type="radio" id="radbut" name="radbut">
+            <input class='userInfo' type="radio" id="radbut" name="radbut" value="Yes">
             <label for="radbut">Yes</label>
-            <input class='userInfo' type="radio" id="radbut" name="radbut">
+            <input class='userInfo' type="radio" id="radbut2" name="radbut" value="No">
             <label for="radbut">No</label><br>
-            <label for="selector">How likley are you to refer CryptoHub to a friend?</label>
-            <input class="userInfo" type="checkbox" id="selector" name="selector">
+           <label for="selector">How likley are you to refer CryptoHub to a friend?</label>
+            <select name="referal" id="referal">
+                <option>Refer Us</option>
+                <option id="option" value="Yes">Yes</option>
+                <option id="option" value="Maybe">Maybe</option>
+                <option id="option" value="No">No</option>
+            </select>
+            <label id=marg>What Crypto Currencies intrest you?</label>
+            <label for="btc" id="intrest"name="intrest">Bitcoin</label>
+            <input type="checkbox" id="intrest"name="intrest" value = "Bitcoin">
+            <label for="ether" id="intrest"name="intrest">Ethereum</label>
+            <input type="checkbox" id="intrest"name="intrest" value="Ethereum">
+            <label for="ada" id="intrest"name="intrest">Cardano</label>
+            <input type="checkbox" id="intrest"name="intrest"value="Cardano">
+            
+            
             <button onclick="myFunction()">Submit</button>
         </form>
     </div>
