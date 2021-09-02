@@ -1,0 +1,152 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.boxContainer {
+    display: grid;
+    
+}
+
+header {
+    font-size: 22px;
+    background-color: rgb(135, 188, 241);
+    text-align: center;
+    grid-column: 1 / 4;
+}
+
+nav {
+    background-color: rgb(183, 134, 207);
+    grid-column: 1 / 4;
+    
+}
+
+nav > div{
+    border: 1px solid black;
+    border-radius: 3px;
+    text-align: center;
+    
+}
+
+.box3, .box4{
+    display: none;
+}
+
+main {
+    background-color: rgb(82, 248, 82);
+    grid-column: 1/ 4;
+    
+}
+
+img{
+    width: 100%;
+    height: auto;
+    grid-column: 1/4;
+}
+
+footer {
+    font-size: 20px;
+    background-color: rgb(76, 51, 243);
+    text-align: center;
+    grid-column: 1 / 4;
+}
+table{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+aside{
+    background-color: coral;
+    grid-column: 1/4;
+}
+
+
+@media only screen and (min-width: 400px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    
+    .boxContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    header {
+        font-size: 22px;
+        background-color: rgb(135, 188, 241);
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+    
+    nav {
+        background-color: rgb(183, 134, 207);
+        grid-column: 1/4;
+        
+        
+        
+        
+    }
+    
+    nav > div{
+        border: 1px solid black;
+        border-radius: 3px;
+        text-align: center;
+        
+    }
+    
+    main {
+        background-color: rgb(82, 248, 82);
+        grid-column: 1/3;
+        
+    }
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+    aside{
+        background-color: coral;
+        grid-column: 3/4;
+    }
+    
+    footer {
+        font-size: 20px;
+        background-color: rgb(76, 51, 243);
+        text-align: center;
+        grid-column: 1 / 4;
+    }
+    table{
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .box3{
+        display: none;
+    }
+    .box4{
+        display:inherit;
+    }
+}
+@media only screen and (min-width: 700px){
+    .box3{
+        display: inherit;
+    }
+    main {
+        background-color: rgb(82, 248, 82);
+        grid-column: 1 / 3;
+        
+    }
+    nav {
+        background-color: rgb(183, 134, 207);
+        grid-column: 1 / 4;
+        
+    }
+    aside{
+        background-color: coral;
+        grid-column: 3/4;
+    }
+    
+}

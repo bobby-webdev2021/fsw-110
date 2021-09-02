@@ -1,0 +1,31 @@
+.gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1px;
+    column-gap: 1px;
+}
+.gridContainer div{
+    height:  30px;
+    padding: 20px;
+}
+.boxA{background-color: #F5C6D6;}
+.boxB{background-color: #EE2E84;}
+.boxC{background-color: #EE2E84;}
+.boxD{background-color: #EE2E84;}
+.boxE{background-color: #EE2E84;}
+.boxF{background-color: #85CFD8;}
+.boxG{background-color: #85CFD8;}
+.boxH{background-color: #8DC63F;}
+.boxI{background-color: #E76E34;}
+
+
+@media only screen and (min-width: 768px){
+    .gridContainer{
+        grid-template-columns: repeat(4 1fr);
+    }
+    .boxA{grid-column-start: 1;grid-column-end: 5;}
+    .boxF{grid-column-start: 1;grid-column-end: 3;}
+    .boxG{grid-column-start: 3;grid-column-end: 5;}
+    .boxH{grid-column-start: 1;grid-column-end: 4;}
+}
+
