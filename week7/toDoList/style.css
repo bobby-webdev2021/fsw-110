@@ -83,7 +83,7 @@
     color: rgb(40, 20, 220);
   }
  
-  .addBtn {
+  button {
     padding: 10px;
     width: 25%;
     background: #a2bae6;

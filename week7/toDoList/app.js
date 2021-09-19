@@ -1,56 +1,30 @@
-// Create a "close" button and append it to each list item
-var myNodelist = document.getElementsByTagName("LI");
-var i;
-for (i = 0; i < myNodelist.length; i++) {
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  myNodelist[i].appendChild(span);
-}
+var form= document.getElementById("myForm");
+var input1= form.elements["title"];
+var input2= form.elements["discription"];
+var myList= document.getElementById("myList");
 
-// Click on a close button to hide the current list item
-var close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-  close[i].onclick = function() {
-    var div = this.parentElement;
-    div.style.display = "none";
-  }
-}
+form.addEventListener("submit", function(event){
+    event.preventDefault();
+    var listItem= document.createElement("li");
+    var listTitle= document.createElement("h3");
+    var listDiscription= document.createElement("h3");
+    var clearButton= document.createElement("button"); 
+    listTitle.textContent= input1.value;
+    listDiscription.textContent= input2.value;
+    clearButton.textContent= "clear";
+    myList.appendChild(listItem);
+    listItem.appendChild(listTitle);
+    listItem.appendChild(listDiscription);
+    listItem.appendChild(clearButton);
 
-// Add a "checked" symbol when clicking on a list item
-var list = document.querySelector('ul');
-list.addEventListener('click', function(ev) {
-  if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
-  }
-}, false);
+    // refresh input boxes upon submission
+    input1.value= "";
+    input2.value= "";
 
-// Create a new list item when clicking on the "Add" button
-function newElement() {
-  var li = document.createElement("li");
-  var inputValue = document.getElementById("myInput").value+":" +" "+ document.getElementById("myInput2").value;
-  var t = document.createTextNode(inputValue);
-  li.appendChild(t);
-  if (inputValue === '') {
-    alert("You must write something!");
-  } else {
-    document.getElementById("myUL").appendChild(li);
-  }
-  document.getElementById("myInput").value = "";
-  document.getElementById("myInput2").value = "";
+    // remove list item after button click
+    clearButton.addEventListener("click", function(){
+        clearButton.parentNode.remove();    
+    });
 
-  var span = document.createElement("SPAN");
-  var txt = document.createTextNode("\u00D7");
-  span.className = "close";
-  span.appendChild(txt);
-  li.appendChild(span);
+});
 
-  for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
-      var div = this.parentElement;
-      div.style.display = "none";
-    }
-  }
-}
